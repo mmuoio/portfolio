@@ -84,7 +84,7 @@ header h4 {
 }
 .jumbo-cover .container .profile-photo {
   float: left;
-  margin-right: 1em;
+  margin-right: 2.5em;
   padding: 0px;
 }
 .jumbo-cover .container .profile-photo img {
@@ -102,6 +102,9 @@ header h4 {
     margin-right: 0;
   }
 }
+.jumbo-cover .skills {
+  clear: left;
+}
 .jumbo-cover .skills h3 {
   text-align: center;
   margin-bottom: 1em;
@@ -112,14 +115,24 @@ header h4 {
   font-style: italic;
   color: #305fbd;
 }
-.jumbo-cover .skills .fa-brands,
-.jumbo-cover .skills .fa-solid {
+.jumbo-cover .skills .skill {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-.jumbo-cover .skills .fa-brands:hover,
-.jumbo-cover .skills .fa-solid:hover {
-  transform: scale(1.15);
+.jumbo-cover .skills .skill .fa-brands,
+.jumbo-cover .skills .skill .fa-solid {
+  font-size: 4em;
+}
+@media screen and (max-width: 750px) {
+  .jumbo-cover .skills .skill .fa-brands,
+.jumbo-cover .skills .skill .fa-solid {
+    font-size: 3.5em;
+  }
+}
+@media screen and (min-width: 750px) {
+  .jumbo-cover .skills .skill:hover {
+    transform: scale(1.15);
+  }
 }
 
 .jumbo-projects {

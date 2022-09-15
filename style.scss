@@ -95,7 +95,7 @@ header {
 				object-fit: cover;
 			}
 			float: left;
-			margin-right: 1em;
+			margin-right: 2.5em;
 			padding: 0px;
 
 			@media screen and (max-width: $responsiveSize) {
@@ -111,7 +111,11 @@ header {
 		}
 	}
 
+	.about-me {
+	}
+
 	.skills {
+		clear: left;
 		h3 {
 			text-align: center;
 			margin-bottom: 1em;
@@ -122,12 +126,21 @@ header {
 			font-style: italic;
 			color: $brandColor;
 		}
-		.fa-brands,
-		.fa-solid {
+		.skill {
 			transition: all 0.2s ease-in-out;
 			cursor: pointer;
-			&:hover {
-				transform: scale(1.15);
+			.fa-brands,
+			.fa-solid {
+				font-size: 4em;
+				@media screen and (max-width: $responsiveSize) {
+					font-size: 3.5em;
+				}
+			}
+
+			@media screen and (min-width: $responsiveSize) {
+				&:hover {
+					transform: scale(1.15);
+				}
 			}
 		}
 	}
