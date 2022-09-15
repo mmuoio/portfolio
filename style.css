@@ -9,6 +9,22 @@ body {
   }
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.65em;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -77,6 +93,7 @@ header h4 {
   padding: 48px 16px;
 }
 .jumbo-cover h3,
+.jumbo-cover h2,
 .jumbo-cover .strong {
   color: #c33e00;
 }
