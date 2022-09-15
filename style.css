@@ -2,6 +2,12 @@ html,
 body {
   font-family: "Mulish", sans-serif;
 }
+@media screen and (max-width: 750px) {
+  html,
+body {
+    font-size: 16pt;
+  }
+}
 
 .sticky {
   position: fixed;
@@ -14,6 +20,7 @@ body {
   display: block;
   background-color: #fff;
   transition: height 0.15s;
+  z-index: 10;
 }
 .navbar li a.nav-link {
   font-size: 16pt;
@@ -56,31 +63,63 @@ header h4 {
   text-align: center;
 }
 
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+  width: 100%;
+}
+
+.jumbo-cover {
+  padding: 48px 16px;
+}
 .jumbo-cover .container {
-  height: 40vh;
-  width: 60%;
+  min-height: 20vh;
+  max-width: 70%;
   padding: 15px;
 }
 @media screen and (max-width: 750px) {
   .jumbo-cover .container {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .jumbo-cover .container .profile-photo {
   float: left;
-  margin-right: 20px;
+  margin-right: 1em;
   padding: 0px;
-  width: 10em;
-  height: 12em;
-  max-width: 100%;
+}
+.jumbo-cover .container .profile-photo img {
+  width: 8em;
+  height: 10em;
   border-radius: 200px;
   border: 10px solid #fff;
   object-fit: cover;
 }
-@media screen {
-  .jumbo-cover .container {
-    min-height: 450px;
+@media screen and (max-width: 750px) {
+  .jumbo-cover .container .profile-photo {
+    float: none;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-right: 0;
   }
+}
+.jumbo-cover .skills h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.jumbo-cover .skills div {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  color: #305fbd;
+}
+.jumbo-cover .skills .fa-brands,
+.jumbo-cover .skills .fa-solid {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.jumbo-cover .skills .fa-brands:hover,
+.jumbo-cover .skills .fa-solid:hover {
+  transform: scale(1.15);
 }
 
 .jumbo-projects {
