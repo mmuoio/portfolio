@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: "Aleo", serif;
 }
 @media screen and (max-width: 750px) {
   html,
@@ -26,6 +26,7 @@ body {
   font-size: 16pt;
 }
 .navbar li a.nav-link:hover {
+  color: #c33e00;
   font-weight: bold;
 }
 .navbar .navbar-brand {
@@ -58,6 +59,9 @@ header .header-intro {
   margin-top: 125px;
   margin-bottom: 25px;
 }
+header .header-intro h4 {
+  color: #c33e00;
+}
 header h1,
 header h4 {
   text-align: center;
@@ -72,9 +76,13 @@ header h4 {
 .jumbo-cover {
   padding: 48px 16px;
 }
+.jumbo-cover h3,
+.jumbo-cover .strong {
+  color: #c33e00;
+}
 .jumbo-cover .container {
   min-height: 20vh;
-  max-width: 70%;
+  max-width: 50%;
   padding: 15px;
 }
 @media screen and (max-width: 750px) {
@@ -84,14 +92,14 @@ header h4 {
 }
 .jumbo-cover .container .profile-photo {
   float: left;
-  margin-right: 2.5em;
+  margin-right: 1.5em;
   padding: 0px;
 }
 .jumbo-cover .container .profile-photo img {
   width: 8em;
   height: 10em;
   border-radius: 200px;
-  border: 10px solid #fff;
+  border: 8px solid #fff;
   object-fit: cover;
 }
 @media screen and (max-width: 750px) {
@@ -101,6 +109,9 @@ header h4 {
     margin-bottom: 1em;
     margin-right: 0;
   }
+}
+.jumbo-cover .about-me {
+  text-align: justify;
 }
 .jumbo-cover .skills {
   clear: left;
@@ -131,7 +142,8 @@ header h4 {
 }
 @media screen and (min-width: 750px) {
   .jumbo-cover .skills .skill:hover {
-    transform: scale(1.15);
+    transform: scale(1.5);
+    color: #c33e00;
   }
 }
 
@@ -220,12 +232,12 @@ header h4 {
  **********************************************************************/
 .blue {
   background: #7abcff; /* Old browsers */
-  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* IE10+ */
-  background: linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* W3C */
+  background: -moz-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* IE10+ */
+  background: linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* W3C */
 }
 
 /***********************************************************************

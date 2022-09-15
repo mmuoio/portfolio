@@ -1,7 +1,8 @@
 $brandColor: #305fbd;
+$secondaryColor: #c33e00;
 //$fontFamily: "Montserrat", sans-serif;
-//$fontFamily: "Aleo", serif;
-$fontFamily: "Mulish", sans-serif;
+$fontFamily: "Aleo", serif;
+//$fontFamily: "Mulish", sans-serif;
 $responsiveSize: 750px;
 $headerTransitionSpeed: 0.15s;
 
@@ -26,6 +27,7 @@ body {
 	li a.nav-link {
 		font-size: 16pt;
 		&:hover {
+			color: $secondaryColor;
 			font-weight: bold;
 		}
 	}
@@ -62,6 +64,9 @@ header {
 	.header-intro {
 		margin-top: 125px;
 		margin-bottom: 25px;
+		h4 {
+			color: $secondaryColor;
+		}
 	}
 	h1,
 	h4 {
@@ -79,9 +84,13 @@ header {
 }
 .jumbo-cover {
 	padding: 48px 16px;
+	h3,
+	.strong {
+		color: $secondaryColor;
+	}
 	.container {
 		min-height: 20vh;
-		max-width: 70%;
+		max-width: 50%;
 		@media screen and (max-width: $responsiveSize) {
 			max-width: 100%;
 		}
@@ -91,11 +100,11 @@ header {
 				width: 8em;
 				height: 10em;
 				border-radius: 200px;
-				border: 10px solid #fff;
+				border: 8px solid #fff;
 				object-fit: cover;
 			}
 			float: left;
-			margin-right: 2.5em;
+			margin-right: 1.5em;
 			padding: 0px;
 
 			@media screen and (max-width: $responsiveSize) {
@@ -105,13 +114,10 @@ header {
 				margin-right: 0;
 			}
 		}
-
-		@media screen {
-			//min-height: 450px;
-		}
 	}
 
 	.about-me {
+		text-align: justify;
 	}
 
 	.skills {
@@ -139,7 +145,8 @@ header {
 
 			@media screen and (min-width: $responsiveSize) {
 				&:hover {
-					transform: scale(1.15);
+					transform: scale(1.5);
+					color: $secondaryColor;
 				}
 			}
 		}
@@ -291,41 +298,41 @@ header {
 	background: #7abcff; /* Old browsers */
 	background: -moz-linear-gradient(
 		top,
-		#7abcff 0%,
-		#60abf8 44%,
-		#4096ee 100%
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* FF3.6+ */
 	background: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
-		color-stop(0%, #7abcff),
-		color-stop(44%, #60abf8),
-		color-stop(100%, #4096ee)
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(
 		top,
-		#7abcff 0%,
-		#60abf8 44%,
-		#4096ee 100%
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(
 		top,
-		#7abcff 0%,
-		#60abf8 44%,
-		#4096ee 100%
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* Opera 11.10+ */
 	background: -ms-linear-gradient(
 		top,
-		#7abcff 0%,
-		#60abf8 44%,
-		#4096ee 100%
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* IE10+ */
 	background: linear-gradient(
 		top,
-		#7abcff 0%,
-		#60abf8 44%,
-		#4096ee 100%
+		#93c9ff 0%,
+		#85b8ee 44%,
+		#6eaae6 100%
 	); /* W3C */
 }
 
