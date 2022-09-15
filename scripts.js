@@ -8,7 +8,6 @@ window.onscroll = function () {
 
 function growShrinkHeader() {
 	let header = $(".navbar.sticky");
-	let headerStyles = window.getComputedStyle(header);
 	let headerIntro = $(".header-intro");
 	let headerIntroStyles = window.getComputedStyle(headerIntro);
 
@@ -23,8 +22,10 @@ function growShrinkHeader() {
 
 	if (window.scrollY > introHeight - navHeight) {
 		header.classList.add("shrink-header");
-	} else {
+		headerShrunk = true;
+	} else if (window.scrollY < introHeight - navHeight - 50) {
 		header.classList.remove("shrink-header");
+		headerShrunk = false;
 	}
 
 	//console.log(window.scrollY, introHeight - navHeight);

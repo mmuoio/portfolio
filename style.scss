@@ -17,6 +17,7 @@ body {
 }
 .navbar {
 	height: 110px;
+	display: block;
 	background-color: #fff;
 	transition: height $headerTransitionSpeed;
 	li a.nav-link {
@@ -40,11 +41,15 @@ body {
 		}
 	}
 	&.shrink-header {
-		height: 65px;
+		height: 75px;
 		font-size: 14pt;
 		.navbar-brand {
-			transform: scale(0.6);
+			transform: scale(0.68);
 		}
+		box-shadow: 0px 5px 10px rgb(98, 98, 98);
+	}
+	.container {
+		background-color: #fff;
 	}
 }
 
@@ -61,21 +66,26 @@ header {
 .jumbo-cover {
 	.container {
 		height: 40vh;
-		img {
-			width: 20em;
-			height: 20em;
+		width: 60%;
+		@media screen and (max-width: $responsiveSize) {
+			width: 100%;
+		}
+		padding: 15px;
+		.profile-photo {
+			float: left;
+			margin-right: 20px;
+			padding: 0px;
+			width: 10em;
+			height: 12em;
 			max-width: 100%;
-			border-radius: 15px;
+			border-radius: 200px;
+			border: 10px solid #fff;
 			object-fit: cover;
 			@media screen and (max-width: $responsiveSize) {
-				display: none;
+				//display: none;
 			}
 		}
 		.about-me {
-			height: 20em;
-			width: 20em;
-			background-color: red;
-			border-radius: 15px;
 		}
 
 		@media screen {
