@@ -184,6 +184,16 @@ header {
 			}
 		}
 	}
+
+	.resume-link {
+		a {
+			text-decoration: none;
+			color: $secondaryColor;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
 }
 
 .jumbo-projects {
@@ -278,14 +288,14 @@ header {
 			border-radius: 15px;
 			height: auto;
 
-			@media screen and (min-width: $responsiveSize) {
-				&:hover {
-					-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-					-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-					-o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-					box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-				}
-			}
+			// @media screen and (min-width: $responsiveSize) {
+			// 	&:hover {
+			// 		-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+			// 		-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+			// 		-o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+			// 		box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+			// 	}
+			// }
 
 			.project-desc {
 				padding: 0px 10px 10px 10px;

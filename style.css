@@ -183,6 +183,13 @@ header h4 {
     color: #dc7342;
   }
 }
+.jumbo-cover .resume-link a {
+  text-decoration: none;
+  color: #dc7342;
+}
+.jumbo-cover .resume-link a:hover {
+  color: #fff;
+}
 
 .jumbo-projects {
   height: auto;
@@ -272,14 +279,6 @@ header h4 {
   color: #dc7342;
   font-size: 1.5em;
   padding-top: 10px;
-}
-@media screen and (min-width: 750px) {
-  .jumbo-projects .project-container .project:hover {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-  }
 }
 .jumbo-projects .project-container .project .project-desc {
   padding: 0px 10px 10px 10px;
