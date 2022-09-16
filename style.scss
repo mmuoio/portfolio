@@ -1,5 +1,6 @@
-$brandColor: #305fbd;
-$secondaryColor: #c33e00;
+$brandColor: #7398e0;
+$primaryColor: #2f384c;
+$secondaryColor: #dc7342;
 //$fontFamily: "Montserrat", sans-serif;
 $fontFamily: "Aleo", serif;
 //$fontFamily: "Mulish", sans-serif;
@@ -19,12 +20,15 @@ h1 {
 }
 h2 {
 	font-size: 2.5em;
+	color: $secondaryColor;
 }
 h3 {
 	font-size: 2em;
+	color: $secondaryColor;
 }
 h4 {
 	font-size: 1.65em;
+	color: $secondaryColor;
 }
 
 .sticky {
@@ -45,14 +49,14 @@ h4 {
 		}
 	}
 	.navbar-brand {
-		background-color: $brandColor;
+		background-color: $primaryColor;
 		border-radius: 15px;
 		padding: 0px;
 		height: 65px;
 		width: 65px;
 		transition: transform $headerTransitionSpeed;
 		a {
-			color: #fff;
+			color: $secondaryColor;
 			text-decoration: none;
 			font-weight: bold;
 			font-size: 17pt;
@@ -97,8 +101,8 @@ header {
 }
 .jumbo-cover {
 	padding: 48px 16px;
-	h3,
-	h2,
+	background-color: $primaryColor;
+	color: #fff;
 	.strong {
 		color: $secondaryColor;
 	}
@@ -182,6 +186,10 @@ header {
 	div {
 		text-align: center;
 	}
+}
+
+.footer {
+	background-color: #222629;
 }
 
 .footer-text {
@@ -309,45 +317,49 @@ header {
  *  Blue Background
  **********************************************************************/
 .blue {
-	background: #7abcff; /* Old browsers */
-	background: -moz-linear-gradient(
-		top,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* FF3.6+ */
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(
-		top,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(
-		top,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* Opera 11.10+ */
-	background: -ms-linear-gradient(
-		top,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* IE10+ */
-	background: linear-gradient(
-		top,
-		#93c9ff 0%,
-		#85b8ee 44%,
-		#6eaae6 100%
-	); /* W3C */
+	background-color: #2f384c;
+	//border-top: 10px solid #061027;
+	//border-bottom: 10px solid #061027;
+	color: white;
+	// background: #7abcff; /* Old browsers */
+	// background: -moz-linear-gradient(
+	// 	top,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* FF3.6+ */
+	// background: -webkit-gradient(
+	// 	linear,
+	// 	left top,
+	// 	left bottom,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* Chrome,Safari4+ */
+	// background: -webkit-linear-gradient(
+	// 	top,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* Chrome10+,Safari5.1+ */
+	// background: -o-linear-gradient(
+	// 	top,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* Opera 11.10+ */
+	// background: -ms-linear-gradient(
+	// 	top,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* IE10+ */
+	// background: linear-gradient(
+	// 	top,
+	// 	#93c9ff 0%,
+	// 	#85b8ee 44%,
+	// 	#6eaae6 100%
+	// ); /* W3C */
 }
 
 /***********************************************************************

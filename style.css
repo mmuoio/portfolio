@@ -15,14 +15,17 @@ h1 {
 
 h2 {
   font-size: 2.5em;
+  color: #dc7342;
 }
 
 h3 {
   font-size: 2em;
+  color: #dc7342;
 }
 
 h4 {
   font-size: 1.65em;
+  color: #dc7342;
 }
 
 .sticky {
@@ -42,11 +45,11 @@ h4 {
   font-size: 16pt;
 }
 .navbar li a.nav-link:hover {
-  color: #c33e00;
+  color: #dc7342;
   font-weight: bold;
 }
 .navbar .navbar-brand {
-  background-color: #305fbd;
+  background-color: #2f384c;
   border-radius: 15px;
   padding: 0px;
   height: 65px;
@@ -54,7 +57,7 @@ h4 {
   transition: transform 0.15s;
 }
 .navbar .navbar-brand a {
-  color: #fff;
+  color: #dc7342;
   text-decoration: none;
   font-weight: bold;
   font-size: 17pt;
@@ -76,7 +79,7 @@ header .header-intro {
   margin-bottom: 25px;
 }
 header .header-intro h4 {
-  color: #c33e00;
+  color: #dc7342;
 }
 header h1,
 header h4 {
@@ -91,11 +94,11 @@ header h4 {
 
 .jumbo-cover {
   padding: 48px 16px;
+  background-color: #2f384c;
+  color: #fff;
 }
-.jumbo-cover h3,
-.jumbo-cover h2,
 .jumbo-cover .strong {
-  color: #c33e00;
+  color: #dc7342;
 }
 .jumbo-cover .container {
   min-height: 20vh;
@@ -141,7 +144,7 @@ header h4 {
   text-align: center;
   margin-bottom: 1.5em;
   font-style: italic;
-  color: #305fbd;
+  color: #7398e0;
 }
 .jumbo-cover .skills .skill {
   transition: all 0.2s ease-in-out;
@@ -160,7 +163,7 @@ header h4 {
 @media screen and (min-width: 750px) {
   .jumbo-cover .skills .skill:hover {
     transform: scale(1.5);
-    color: #c33e00;
+    color: #dc7342;
   }
 }
 
@@ -179,6 +182,10 @@ header h4 {
 }
 .grid-container div {
   text-align: center;
+}
+
+.footer {
+  background-color: #222629;
 }
 
 .footer-text {
@@ -248,13 +255,8 @@ header h4 {
  *  Blue Background
  **********************************************************************/
 .blue {
-  background: #7abcff; /* Old browsers */
-  background: -moz-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* IE10+ */
-  background: linear-gradient(top, #93c9ff 0%, #85b8ee 44%, #6eaae6 100%); /* W3C */
+  background-color: #2f384c;
+  color: white;
 }
 
 /***********************************************************************
