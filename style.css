@@ -184,6 +184,7 @@ header h4 {
   }
 }
 .jumbo-cover .resume-link a {
+  font-size: 1.4em;
   text-decoration: none;
   color: #dc7342;
 }
